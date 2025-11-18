@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll</title>
+</head>
+<body>
+    <h1 class="texto">Meu título</h1>
+    <p class="texto">Meu primeiro parágrafo</p>
+    <button id="btn">Mudar</button>
+
+    <script>
+        const t = document.querySelectorAll(".texto");
+        const btn = document.getElementById("btn");
+        btn.onclick = () => {
+        t[0].textContent = "O texto foi mudado";
+        t[0].style.color = "purple";
+        }
+    </script>
+    
+</body>
+</html> 
